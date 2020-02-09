@@ -1,15 +1,15 @@
 // import PropTypes from "prop-types";
 import React, { Component } from "react";
-// import { observer, inject } from "mobx-react";
+import { observer, inject } from "mobx-react";
 
 import { Layout } from "antd";
 import AppSearch from "../components/AppSearch";
-import "../styles/AppSider.less";
+import "../styles/AppSider.scss";
 
 const LayoutSide = Layout.Sider;
 
-// @inject("store")
-// @observer
+@inject("searchStore")
+@observer
 export default class extends Component {
     static propTypes = {};
 

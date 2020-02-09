@@ -1,14 +1,18 @@
 import React from 'react';
+import { Provider } from "mobx-react";
 import { Layout } from "antd";
 import AppSider from "./layout/sidebar";
-import './styles/App.less';
+import SearchStore from "../src/flux/index";
+import './styles/App.scss';
 
 function App() {
 	return (
 		<div className="app">
-			<Layout>
-				<AppSider />
-			</Layout>
+			<Provider searchStore={SearchStore}>
+				<Layout>
+					<AppSider />
+				</Layout>
+			</Provider>
 		</div>
 	);
 }

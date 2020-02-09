@@ -1,11 +1,10 @@
 import { observable, configure, action } from "mobx";
 
-type value = string;
+configure({ enforceActions: "observed" });
 
-configure({ enforceActions: true });
-
-class Store {
-    @observable searchValue: value = "";
+class SearchStore {
+    @observable public searchValue: value = "";
+    @observable public theme: theme = "dark";
     
     @action.bound
     handleSearch() {
@@ -13,4 +12,4 @@ class Store {
     }
 }
 
-export default Store;
+export default new SearchStore();
