@@ -14,6 +14,7 @@ export default class extends Component {
     static propTypes = {};
 
     render() {
+        console.log(window.location, "hash");
         return(
             <LayoutSide className="app-side" width="200">
                 <AppSearch></AppSearch>

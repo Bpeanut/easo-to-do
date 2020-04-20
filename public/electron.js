@@ -13,7 +13,7 @@ function createBrowser() {
     });
 
     if (process.env.NODE_ENV !== "production") {
-        win.loadURL("http://localhost:3000");
+        win.loadURL("http://localhost:5946");
     } else {
         win.loadFile(path.join(__dirname, "../build/index.html"));
     }
