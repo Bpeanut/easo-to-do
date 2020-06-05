@@ -27,7 +27,6 @@ module.exports = {
                                     cacheDirectory: true,
                                     plugins: [
                                         "@babel/plugin-transform-runtime",
-                                        "dva-hmr",
                                         [
                                             "import",
                                             {

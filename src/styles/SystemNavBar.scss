@@ -1,0 +1,14 @@
+.ant-menu-vertical .ant-menu-item:not(:last-child) {
+    margin-bottom: 0;
+}
+.ant-menu-vertical .ant-menu-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+
+}
+// a or a:hover
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
+
+}

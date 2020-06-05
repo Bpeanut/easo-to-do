@@ -1,7 +1,7 @@
 import React, { Component, ChangeEvent } from "react";
 import { observer, inject } from "mobx-react";
-import SvgIcon from "../components/SvgIcon";
-import "../styles/AppSearch.scss";
+import SvgIcon from "../SvgIcon";
+import "../../styles/AppSearch.scss";
 
 interface ISearchStore {
     theme: theme

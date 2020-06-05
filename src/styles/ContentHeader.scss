@@ -1,0 +1,21 @@
+.ant-layout-header {
+    background-color: transparent;
+    line-height: normal;
+    .content-header-left {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+    }
+    .content-header-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-header-right > span {
+        
+    }
+}
